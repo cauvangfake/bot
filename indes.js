@@ -1,11 +1,12 @@
 const express = require('express');
-const app = express();
+const app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.send('Hello ')
 });
 
 app.listen(3000); //đối với replit
+
 
 const { Client, Intents, Collection } = require('discord.js');
 require('dotenv').config();
@@ -22,3 +23,6 @@ client.cooldowns = new Collection();
 
 client.login(process.env.TOKEN);
 console.log(process.env.TOKEN);
+
+
+
