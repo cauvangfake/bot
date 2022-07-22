@@ -22,7 +22,4 @@ client.cooldowns = new Collection();
 ['command', 'event', 'slashCommand'].forEach(handler => require(`./handlers/${handler}`)(client));
 
 client.login(process.env.TOKEN);
-console.log(process.env.TOKEN);
-
-
 
